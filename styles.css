@@ -32,7 +32,6 @@ body {
   height: 100%;
   font-family: "Comfortaa", sans-serif;
   font-size: 16px;
-  color: #874141;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #F8F9F9;
@@ -51,10 +50,7 @@ header {
   flex-wrap: nowrap;
   align-content: space-around;
   height: 100%;
-}
-
-h1 {
-
+  color: #874141;
 }
 
 .title {
@@ -66,7 +62,7 @@ h1 {
   text-transform: lowercase;
   text-align: center;
   border-bottom: 1px solid;
-  font-size: 1.1em;
+  font-size: 1.3em;
   width: 80%;
   padding: 10px;
 }
@@ -80,14 +76,14 @@ h1 {
 main {
   /* Use flexbox to help manage element containers */
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: space-space-between;
   height: 100%;
-  align-content: center;
 }
 
-.columns {
+.col1,
+.col2 {
   text-align: center;
   width: 90%;
   align-self: center;
@@ -95,39 +91,35 @@ main {
   position: relative;
   letter-spacing: 2px;
   text-transform: lowercase;
-  font-size: 1.1em;
   padding: 10px;
 }
 
-.left-column {
+.col1 {
   color: #418741;
 }
 
-.right-column {
+.col2 {
   color: #414187;
 }
 
-.column-title {
-  border-bottom: 1px s
+.col1-title,
+.col2-title {
+  border-bottom: 1px solid;
+  font-size: 1.0em;
 }
 
-.right,
-.left {
-  list-style: none;
+.list1,
+.list2 {
   font-size: 1.1em;
-  align-self: center;
+  width: 90%;
+  margin: auto; /* center div */
   text-align: left;
-}
-
-li {
-  margin: 5px;
-  letter-spacing: 2px;
 }
 
 .extra {
   position: relative;
   font-size: 0.6em;
-  left: 35px;
+  left: 30px;
   bottom: 5px;
 }
 
