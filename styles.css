@@ -62,9 +62,9 @@ header {
   text-transform: lowercase;
   text-align: center;
   border-bottom: 1px solid;
-  font-size: 1.4em;
+  font-size: 1.7em;
   width: 80%;
-  padding: 10px;
+  padding: 5px;
 }
 
 /*
@@ -72,6 +72,10 @@ header {
 * main
 ********************
 */
+
+a {
+  transition: color 1.5s ease, background-color 0.5s ease;
+}
 
 main {
   /* Use flexbox to help manage element containers */
@@ -84,26 +88,56 @@ main {
 .col1,
 .col2 {
   text-align: center;
-  width: 90%;
+  width: 95%;
   align-self: center;
   text-shadow: 0 2px 2px lightgrey;
   position: relative;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: lowercase;
-  padding: 10px;
+  padding: 0;
 }
 
 .col1 {
   color: #418741;
 }
 
+.col1 a:link,
+.col1 a:visited {
+  text-decoration: none;
+  color: #418741;
+}
+
+.col1 a:hover,
+.col1 a:active {
+  text-decoration: none;
+  color: white;
+  background-color: #418741;
+  border-radius: 2px;
+  text-shadow: 0 0 0;
+}
+
 .col2 {
   color: #414187;
 }
 
+.col2 a:link,
+.col2 a:visited {
+  text-decoration: none;
+  color: #414187;
+}
+
+.col2 a:hover,
+.col2 a:active {
+  text-decoration: none;
+  color: white;
+  background-color: #414187;
+  border-radius: 2px;
+  text-shadow: 0 0 0;
+}
+
 .col1-title,
 .col2-title {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 /*
@@ -116,22 +150,23 @@ main {
   content: ""; /* This is necessary for the pseudo element to work. */
   display: block; /* This will put the pseudo element on its own line. */
   margin: 0 auto; /* This will center the border. */
-  width: 85%; /* Change this to whatever width you want. */
-  padding-top: 10px; /* This creates some space between the element and the border. */
+  width: 90%; /* Change this to whatever width you want. */
+  padding-top: 5px; /* This creates some space between the element and the border. */
   border-bottom: 1px solid; /* This creates the border. */
 }
 
 .list1,
 .list2 {
-  font-size: 0.9em;
-  width: 90%;
+  font-size: 1.3em;
+  width: 100%;
   margin: auto; /* center div */
   text-align: left;
+  padding: 0;
 }
 
 .list1 > div,
 .list2 > div {
-  margin: 15px;
+  margin: 10px;
 }
 
 .extra {
@@ -139,26 +174,6 @@ main {
   font-size: 0.6em;
   left: 30px;
   bottom: 5px;
-}
-
-a {
-  transition: color 0.5s ease, background-color 0.5s ease;
-}
-
-/* style and color hyperlinks */
-a:link,
-a:visited {
-  text-decoration: none;
-  color: #444;
-}
-
-a:hover,
-a:active {
-  text-decoration: none;
-  color: white;
-  background-color: #444;
-  border-radius: 2px;
-  text-shadow: 0 0 0;
 }
 
 /*

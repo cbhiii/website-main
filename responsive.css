@@ -6,17 +6,17 @@
 
 @media screen and (min-width: 350px) {
   .title {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
 
   .col1-title,
   .col2-title {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
 
   .list1,
   .list2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     width: 90%;
     margin: auto; /* center div */
     text-align: left;
@@ -25,47 +25,55 @@
 
 @media screen and (min-width: 450px) {
   .title {
-    font-size: 1.8em;
+    font-size: 2.1em;
   }
 
   .col1-title,
   .col2-title {
-    font-size: 1.6em;
+    font-size: 1.9em;
   }
 
   .list1,
   .list2 {
-    font-size: 1.4em;
+    font-size: 1.7em;
     width: 90%;
     margin: auto; /* center div */
     text-align: left;
   }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 500px) {
   .title {
-    font-size: 2.0em;
+    font-size: 2.3em;
   }
 
   .col1-title,
   .col2-title {
-    font-size: 1.8em;
+    font-size: 2.1em;
   }
 
   .list1,
   .list2 {
-    font-size: 1.6em;
+    font-size: 1.9em;
     width: 90%;
     margin: auto; /* center div */
     text-align: left;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
   body {
     margin-left: auto;
     margin-right: auto;
-    width: 800px;
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
   }
 
   main {
@@ -80,23 +88,33 @@
 
   .title {
     font-size: 2em;
+    width: 95%;
   }
 
   .col1,
   .col2 {
     align-self: flex-start;
-    width: 45%;
-  }
+    width: 50%;  }
 
   .col1-title,
   .col2-title {
     font-size: 1.6em;
   }
 
+  .col1-title::after,
+  .col2-title::after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 90%; /* Change this to whatever width you want. */
+    padding-top: 10px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid; /* This creates the border. */
+  }
+
   .list1,
   .list2 {
-    font-size: 1.2em;
-    width: 90%;
+    font-size: 1.4em;
+    width: 100%;
     margin: auto; /* center div */
     text-align: left;
   }
