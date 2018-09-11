@@ -3,3 +3,106 @@
 
   responsive.css
 */
+
+@media screen and (min-width: 350px) {
+  .title {
+    font-size: 1.6em;
+  }
+
+  .col1-title,
+  .col2-title {
+    font-size: 1.4em;
+  }
+
+  .list1,
+  .list2 {
+    font-size: 1.2em;
+    width: 90%;
+    margin: auto; /* center div */
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .title {
+    font-size: 1.8em;
+  }
+
+  .col1-title,
+  .col2-title {
+    font-size: 1.6em;
+  }
+
+  .list1,
+  .list2 {
+    font-size: 1.4em;
+    width: 90%;
+    margin: auto; /* center div */
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .title {
+    font-size: 2.0em;
+  }
+
+  .col1-title,
+  .col2-title {
+    font-size: 1.8em;
+  }
+
+  .list1,
+  .list2 {
+    font-size: 1.6em;
+    width: 90%;
+    margin: auto; /* center div */
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+  }
+
+  main {
+    /* Use flexbox to help manage element containers */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: space-around;
+    height: 100%;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  .col1,
+  .col2 {
+    align-self: flex-start;
+    width: 45%;
+  }
+
+  .col1-title,
+  .col2-title {
+    font-size: 1.6em;
+  }
+
+  .list1,
+  .list2 {
+    font-size: 1.2em;
+    width: 90%;
+    margin: auto; /* center div */
+    text-align: left;
+  }
+
+  .list1 > div,
+  .list2 > div {
+    margin: 25px;
+  }
+}
