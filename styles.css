@@ -32,9 +32,11 @@ body {
   height: 100%;
   font-family: "Comfortaa", sans-serif;
   font-size: 16px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-color: #F8F9F9;
+}
+
+body a {
+  text-decoration: none;
 }
 
 /*
@@ -57,14 +59,13 @@ header {
   /* style name in header, spacing and positioning */
   align-self: center;
   text-shadow: 0 2px 2px lightgrey;
-  position: relative;
   letter-spacing: 2px;
   text-transform: lowercase;
   text-align: center;
   border-bottom: 1px solid;
   font-size: 1.7em;
-  width: 80%;
   padding: 5px;
+  width: 85%;
 }
 
 /*
@@ -98,41 +99,46 @@ main {
 }
 
 .col1 {
-  color: #418741;
+  color: #648741;
 }
 
 .col1 a:link,
 .col1 a:visited {
   text-decoration: none;
-  color: #418741;
+  color: #648741;
+  padding: 2px;
+
 }
 
 .col1 a:hover,
 .col1 a:active {
   text-decoration: none;
   color: white;
-  background-color: #418741;
+  background-color: #648741;
   border-radius: 2px;
   text-shadow: 0 0 0;
+  padding: 2px;
 }
 
 .col2 {
-  color: #414187;
+  color: #418787;
 }
 
 .col2 a:link,
 .col2 a:visited {
-  text-decoration: none;
-  color: #414187;
+  color: #418787;
+  padding: 2px;
+
 }
 
 .col2 a:hover,
 .col2 a:active {
-  text-decoration: none;
   color: white;
-  background-color: #414187;
+  background-color: #418787;
   border-radius: 2px;
   text-shadow: 0 0 0;
+  padding: 2px;
+
 }
 
 .col1-title,
@@ -182,18 +188,63 @@ main {
 ********************
 */
 
-.foot {
-  /* hide footer for now */
-  display: none;
-  text-align: center;
+footer {
+  height: 100%;
   width: 90%;
-  align-self: center;
+  color: #644187;
+  text-transform: lowercase;
+  border-top: 1px solid;
+  margin: 20px auto;
+
+  /* text-shadow: 0 2px 2px lightgrey;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 1.1em;
+  padding: 10px; */
+}
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   text-shadow: 0 2px 2px lightgrey;
+}
+
+.foot-item {
+  width: 14.28%;
+  font-size: 1.3em;
+  text-align: center;
+  /* minimum button width for small screens */
+  min-width: 36px;
+  min-height: 36px;
+
+  /* center vertically */
+  line-height: 48px;
+  height: 48px;
+  display: block;
+}
+
+.foot a:link,
+.foot a:visited {
+    color: #644187;
+    padding: 5px;
+  }
+
+.foot a:hover,
+.foot a:active {
+    color: white;
+    background-color: #644187;
+    border-radius: 2px;
+    text-shadow: 0 0 0;
+    padding: 5px;
+}
+
+  /* text-shadow: 0 2px 2px lightgrey;
   position: relative;
   letter-spacing: 2px;
   text-transform: lowercase;
-  border-top: 2px solid;
-  border-radius: 5px;
-  font-size: 1.1em;
-  padding: 10px;
+  text-align: center;
+  font-size: 1em;
+  width: 80%;
+  padding: 5px; */
 }

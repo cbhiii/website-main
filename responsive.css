@@ -21,6 +21,12 @@
     margin: auto; /* center div */
     text-align: left;
   }
+
+  .foot-item {
+    /* minimum button width for small screens */
+    min-width: 40px;
+    min-height: 40px;
+  }
 }
 
 @media screen and (min-width: 450px) {
@@ -40,7 +46,23 @@
     margin: auto; /* center div */
     text-align: left;
   }
+
+  .foot-item {
+    min-width: 48px;
+    min-height: 48px;
+  }
+
+  .foot a:link,
+  .foot a:visited {
+    padding: 10px;
+  }
+
+  .foot a:hover,
+  .foot a:active {
+    padding: 10px;
+  }
 }
+
 
 @media screen and (min-width: 500px) {
   .title {
@@ -94,7 +116,8 @@
   .col1,
   .col2 {
     align-self: flex-start;
-    width: 50%;  }
+    width: 50%;
+  }
 
   .col1-title,
   .col2-title {
