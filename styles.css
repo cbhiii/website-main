@@ -37,6 +37,7 @@ body {
 
 body a {
   text-decoration: none;
+  transition: color 1.5s ease, background-color 0.5s ease;
 }
 
 /*
@@ -74,10 +75,6 @@ header {
 ********************
 */
 
-a {
-  transition: color 1.5s ease, background-color 0.5s ease;
-}
-
 main {
   /* Use flexbox to help manage element containers */
   display: flex;
@@ -104,15 +101,12 @@ main {
 
 .col1 a:link,
 .col1 a:visited {
-  text-decoration: none;
   color: #648741;
   padding: 2px;
-
 }
 
 .col1 a:hover,
 .col1 a:active {
-  text-decoration: none;
   color: white;
   background-color: #648741;
   border-radius: 2px;
@@ -128,7 +122,6 @@ main {
 .col2 a:visited {
   color: #418787;
   padding: 2px;
-
 }
 
 .col2 a:hover,
@@ -138,7 +131,6 @@ main {
   border-radius: 2px;
   text-shadow: 0 0 0;
   padding: 2px;
-
 }
 
 .col1-title,
@@ -214,6 +206,7 @@ footer {
   width: 14.28%;
   font-size: 1.3em;
   text-align: center;
+
   /* minimum button width for small screens */
   min-width: 36px;
   min-height: 36px;
@@ -226,25 +219,15 @@ footer {
 
 .foot a:link,
 .foot a:visited {
-    color: #644187;
-    padding: 5px;
-  }
+  color: #644187;
+  padding: 5px;
+}
 
 .foot a:hover,
 .foot a:active {
-    color: white;
-    background-color: #644187;
-    border-radius: 2px;
-    text-shadow: 0 0 0;
-    padding: 5px;
-}
-
-  /* text-shadow: 0 2px 2px lightgrey;
-  position: relative;
-  letter-spacing: 2px;
-  text-transform: lowercase;
-  text-align: center;
-  font-size: 1em;
-  width: 80%;
-  padding: 5px; */
+  color: white;
+  background-color: #644187;
+  border-radius: 2px;
+  text-shadow: 0 0 0;
+  padding: 5px;
 }
