@@ -37,7 +37,7 @@ body {
 
 body a {
   text-decoration: none;
-  transition: color 1.5s ease, background-color 0.5s ease;
+  transition: color 0.5s ease, background-color 0.5s ease;
 }
 
 /*
@@ -53,7 +53,7 @@ header {
   flex-wrap: nowrap;
   align-content: space-around;
   height: 100%;
-  color: #874141;
+  color: #6E0000;
 }
 
 .title {
@@ -96,38 +96,38 @@ main {
 }
 
 .col1 {
-  color: #648741;
+  color: #376E00;
 }
 
 .col1 a:link,
 .col1 a:visited {
-  color: #648741;
+  color: #376E00;
   padding: 2px;
 }
 
 .col1 a:hover,
 .col1 a:active {
   color: white;
-  background-color: #648741;
+  background-color: #376E00;
   border-radius: 2px;
   text-shadow: 0 0 0;
   padding: 2px;
 }
 
 .col2 {
-  color: #418787;
+  color: #006E6E;
 }
 
 .col2 a:link,
 .col2 a:visited {
-  color: #418787;
+  color: #006E6E;
   padding: 2px;
 }
 
 .col2 a:hover,
 .col2 a:active {
   color: white;
-  background-color: #418787;
+  background-color: #006E6E;
   border-radius: 2px;
   text-shadow: 0 0 0;
   padding: 2px;
@@ -183,7 +183,7 @@ main {
 footer {
   height: 100%;
   width: 90%;
-  color: #644187;
+  color: #37006E;
   text-transform: lowercase;
   border-top: 1px solid;
   margin: 20px auto;
@@ -219,14 +219,14 @@ footer {
 
 .foot a:link,
 .foot a:visited {
-  color: #644187;
+  color: #37006E;
   padding: 5px;
 }
 
 .foot a:hover,
 .foot a:active {
   color: white;
-  background-color: #644187;
+  background-color: #37006E;
   border-radius: 2px;
   text-shadow: 0 0 0;
   padding: 5px;
